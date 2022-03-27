@@ -13,8 +13,9 @@ spec:
         app: hello-world
     spec:
       containers:
-      - image: okteto/hello-world:golang
+      - image: jpillora/chisel:latest
         name: hello-world
+        command: ["server", "-p", "8080", "--socks5"]
 
 ---
 
