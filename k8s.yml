@@ -15,7 +15,7 @@ spec:
       containers:
       - image: jpillora/chisel:latest
         name: hello-world
-        command: ["server", "-p", "8080", "--socks5"]
+        args: ["server", "-p", "8080", "--socks5"]
 
 ---
 
